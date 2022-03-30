@@ -1,38 +1,371 @@
-.App {
+.fone {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* домашняя страница */
+
+.container-homepage {
+  margin-top: 80px;
+  display: flex;
+}
+
+/* меню */
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: #279bc5;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.link {
+  color: #fff;
+  text-shadow: 3px 3px #1A132F;
+  text-decoration: none;
+  font-family: 'Comfortaa', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 40px;
+  margin-left: 20px;
+}
+
+/* фильтр фо */
+
+.filterbutton {
+  width: 30%;
+  height: max-content;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+  margin-top: 93px;
+  flex-wrap: wrap;
+}
+
+.btn-district {
+  width: 320px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 10px;
+  cursor: pointer;
+  background-color: #333C83;
+  color: #fff;
+  text-shadow: 2px 2px #1A132F;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn-district:hover {
+  background-color: #f24a71b9;
+  color: #fff;
+  text-shadow: 2px 2px #1A132F;
+}
+
+.btn-district-selected {
+  width: 320px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 10px;
+  cursor: pointer;
+  background-color: #F24A72;
+  color: #fff;
+  text-shadow: 2px 2px #1A132F;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* регионы список */
+
+.region-block {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.nameFo {
+  color: #161f63;
+  text-shadow: 1px 1px #F24A72;
+  font-family: 'Comfortaa', cursive;
+  font-size: 40px;
+  font-weight: bold;
   text-align: center;
+  margin-bottom: -7px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.region-container {
+  width: 300px;
+  text-align: center;
+  margin-top: 45px;
+  margin-left: 6px;
+  margin-right: 5px;
+  background-color: #50a7c763;
+  padding: 10px;
+  border-radius: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.flag {
+  width: 150px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.noBtn {
+  width: 200px;
+  cursor: pointer;
+  background-color: #979797;
+  border: none;
+  padding: 5px 25px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.doneBtn {
+  width: 200px;
+  cursor: pointer;
+  border: none;
+  padding: 5px 25px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #F24A72;
+  color: #fff;
+  text-shadow: 2px 1px #1A132F;
+}
+
+.region {
+  font-family: 'Comfortaa', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px #fff;
+}
+
+.quantity-region {
+  color: #fff;
+  text-shadow: 3px 3px #1A132F;
+  margin-right: 15px;
+  background-color: #F24A72;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+
+/* страница мои путешествия */
+
+.russia-picture {
+  width: 830px;
+  border-radius: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container-mytravel {
+  margin-top: 80px;
+  margin-left: 5%;
+}
+
+.myRegoin-block {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.nameFoList {
+  color: #161f63;
+  text-shadow: 1px 1px #F24A72;
+  font-family: 'Comfortaa', cursive;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.flagInMyTravel {
+  width: 60px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.regionInMyTravel {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Comfortaa', cursive;
+}
+
+.myTravel-block {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.district {
+  background-color: #50a7c74f;
+  padding: 20px;
+  border-radius: 30px;
+  width: 500px;
+  margin-bottom: 25px;
+  margin-right: 20px;
+}
+
+@media all and (max-width: 800px) {
+
+/* страница главная */
+
+.link {
+  text-shadow: 2px 2px #1a132f;
+  font-size: 22px;
+  margin-right: 35px;
+  margin-left: 15px;
+}
+
+.container-homepage {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.filterbutton {
+  width: 90%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nameFo {
+  font-size: 35px;
+  margin-bottom: 15px;
 }
+
+.region-container {
+  width: 220px;
+  margin-top: 25px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.region {
+  font-size: 15px;
+  text-shadow: none;
+}
+
+/* страница мои путешествия */
+
+.container-mytravel {
+  margin-top: 60px;
+  margin-left: 0;
+}
+
+.russia-picture {
+  width: 100%;
+  text-align: center;
+}
+
+.myTravel-block {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.nameFoList {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+}
+
+@media all and (max-width: 500px) {
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.link {
+  margin-bottom: 3px;
+  font-size: 20px;
+}
+
+
+.filterbutton {
+  margin-top: 70px;
+}
+
+.btn-district-selected, .btn-district {
+  width: 165px;
+  height: 50px;
+  padding: 5px 5px;
+  font-size: 15px;
+  margin-left: 3px;
+}
+
+  .nameFo {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+
+  .region-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 10px;
+}
+
+.flag {
+  width: 60px;
+  height: 40px;
+}
+
+.noBtn, .doneBtn {
+  width: 90px;
+  height: 45px;
+  font-size: 15px;
+  padding: 5px 5px;
+}
+
+.region {
+  font-size: 14px;
+}
+
+.myTravel-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.district {
+  border-radius: 10px;
+  width: 90%;
+  padding: 5px 10px;
+}
+
+.russia-picture {
+  margin-top: 60px;
+}
+
+.regionInMyTravel {
+  font-size: 15px;
+}
+
+.flagInMyTravel {
+  width: 50px;
+  height: 30px;
+}
+
+.nameFoList {
+  font-size: 20px;
+}
+
+
+}
+
+
