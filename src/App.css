@@ -165,11 +165,34 @@
 
 /* страница мои путешествия */
 
+.empty-block {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 50%;
+  margin-top: 30px;
+}
+
+.empty {
+  color: #161f63;
+  text-shadow: 1px 1px #F24A72;
+  font-family: 'Comfortaa', cursive;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.empty-img {
+  width: 250px;
+}
+
 .russia-picture {
   width: 830px;
   border-radius: 50px;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.russia-picture-mobil {
+  display: none;
 }
 
 .container-mytravel {
@@ -266,6 +289,7 @@
 .russia-picture {
   width: 100%;
   text-align: center;
+  margin-top: 50px;
 }
 
 .myTravel-block {
@@ -276,6 +300,15 @@
 .nameFoList {
   font-size: 22px;
   margin-bottom: 20px;
+}
+
+.empty-block {
+  width: 80%;
+}
+
+.empty {
+  font-size: 35px;
+  text-align: center;
 }
 }
 
@@ -349,10 +382,6 @@
   padding: 5px 10px;
 }
 
-.russia-picture {
-  margin-top: 60px;
-}
-
 .regionInMyTravel {
   font-size: 15px;
 }
@@ -368,6 +397,27 @@
 
 .quantity-region {
   text-shadow: 2px 2px #1a132f;
+}
+
+.russia-picture {
+  display: none;
+}
+
+.russia-picture-mobil {
+  display: block;
+  width: 100%;
+  margin-top: 100px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.empty-block {
+  flex-direction: column;
+  width: 100%;
+}
+
+.empty {
+  font-size: 30px;
 }
 
 
