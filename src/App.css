@@ -413,11 +413,13 @@
 
 .empty-block {
   flex-direction: column;
+  margin-top: 10px;
   width: 100%;
 }
 
 .empty {
-  font-size: 30px;
+  font-size: 28px;
+  margin-left: 0px;
 }
 
 
