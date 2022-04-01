@@ -1,15 +1,14 @@
 function Search({ setValueSearch }) {
+
     return (
         <div>
-            <form>
-                <input
-                    className="search-input"
-                    type='text'
-                    placeholder="Введите название региона..."
-                    onChange={(e) => setValueSearch(e.target.value)}/>
-            </form>
+            <input
+                className="search-input"
+                type='text'
+                placeholder="Введите название региона..."
+                onChange={(e) => setValueSearch(e.target.value)}/>
         </div>
     );
 }
 
-export default Search;
+export default Search
