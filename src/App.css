@@ -47,8 +47,12 @@
   display: flex;
   justify-content: space-evenly;
   margin: 20px;
-  margin-top: 93px;
+  margin-top: 103px;
   flex-wrap: wrap;
+}
+
+.region-russia {
+  width: 90%;
 }
 
 .btn-district {
@@ -61,7 +65,7 @@
   background-color: #333C83;
   color: #fff;
   text-shadow: 2px 2px #1A132F;
-  margin-top: 20px;
+  margin-top: 15px;
   border: none;
   border-radius: 10px;
 }
@@ -82,9 +86,21 @@
   background-color: #F24A72;
   color: #fff;
   text-shadow: 2px 2px #1A132F;
-  margin-top: 20px;
+  margin-top: 15px;
   border: none;
   border-radius: 10px;
+}
+
+/* поиск */
+
+.search-input {
+  width: 300px;
+  font-family: 'Comfortaa', cursive;
+  padding: 7px;
+  font-size: 15px;
+  border: 3px solid #F24A72;
+  box-shadow: 3px 3px 5px #279bc5;
+  margin-bottom: 20px;
 }
 
 /* регионы список */
@@ -108,7 +124,7 @@
 .region-container {
   width: 300px;
   text-align: center;
-  margin-top: 45px;
+  margin-top: 33px;
   margin-left: 6px;
   margin-right: 5px;
   background-color: #50a7c763;
@@ -262,6 +278,10 @@
   width: 90%;
 }
 
+.search-input {
+  width: 630px;
+}
+
 .nameFo {
   font-size: 35px;
   margin-bottom: 15px;
@@ -328,7 +348,11 @@
 
 
 .filterbutton {
-  margin-top: 70px;
+  margin-top: 90px;
+}
+
+.search-input {
+  width: 300px;
 }
 
 .btn-district-selected, .btn-district {
@@ -418,8 +442,9 @@
 }
 
 .empty {
-  font-size: 32px;
-  margin-left: 0px;
+  font-size: 25px;
+  margin-left: 10px;
+  margin-top: 15px;
 }
 
 

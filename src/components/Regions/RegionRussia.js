@@ -1,18 +1,17 @@
 import { useSelector } from "react-redux";
 import { getSelectedRegion } from "../../redux/regionSlice";
-import { data } from "../../data";
 import RegionList from "./RegionList";
 
-function RegionRussia() {
+function RegionRussia({ searchResult }) {
     const selectedRegion = useSelector(getSelectedRegion)
 
     return (
-        <div>
+        <div className="region-russia">
             <div>
                 <h2 className="nameFo">{selectedRegion}</h2>
             </div>
             <div className="region-block">
-                {data
+                {searchResult
                 .filter(region => {
                     return selectedRegion === region.district
                 })

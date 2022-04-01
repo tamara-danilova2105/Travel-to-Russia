@@ -1,12 +1,20 @@
+import { useState } from "react";
 import ButtonRegions from "../components/Filter/ButtonRegions";
 import RegionRussia from "../components/Regions/RegionRussia";
+import { data } from "../data";
 
 
 function HomePage() {
+
+    const [valueSearch, setValueSearch] = useState('')
+    const searchResult = data.filter(item => {
+        return item.region.toLocaleLowerCase().includes(valueSearch.toLocaleLowerCase())
+    })
+
     return (
         <div className="container-homepage">
-            <ButtonRegions />
-            <RegionRussia />
+            <ButtonRegions setValueSearch={setValueSearch} />
+            <RegionRussia searchResult={searchResult} />
         </div>
     );
 }
