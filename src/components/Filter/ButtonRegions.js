@@ -3,8 +3,6 @@ import Search from "./Search";
 
 function ButtonRegions({ setValueSearch }) {
 
-    
-
     return (
         <div className="filterbutton">
             <Search setValueSearch={setValueSearch}/>

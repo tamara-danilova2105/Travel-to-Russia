@@ -7,6 +7,7 @@ import { data } from "../data";
 function HomePage() {
 
     const [valueSearch, setValueSearch] = useState('')
+
     const searchResult = data.filter(item => {
         return item.region.toLocaleLowerCase().includes(valueSearch.toLocaleLowerCase().trim())
     })

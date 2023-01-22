@@ -15,7 +15,7 @@ function RegionRussia({ searchResult }) {
                 .filter(region => {
                     return selectedRegion === region.district
                 })
-                .map((region, id) => <RegionList key={id} region={region}/>)}
+                .map(region => <RegionList key={region.id} region={region}/>)}
             </div>
         </div>
 
